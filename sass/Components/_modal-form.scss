@@ -68,12 +68,12 @@ textarea {
 	transition-property: fill;
 	transition-duration: var(--transition-time);
 	transition-timing-function: var(--transition-func);
-}
 
-.form-input:hover + .modal-form-icon,
-.form-input:focus + .modal-form-icon,
-.form-input:not(:placeholder-shown) + .modal-form-icon {
-	fill: #2196f3;
+	.form-input:hover + &,
+	.form-input:focus + &,
+	.form-input:not(:placeholder-shown) + & {
+		fill: #2196f3;
+	}
 }
 
 .modal-form-message {
@@ -120,14 +120,14 @@ textarea {
 	border: 2px solid #212121;
 	border-radius: 2px;
 	cursor: pointer;
+
+	.modal-form-checkbox:checked + & {
+		border-color: transparent;
+		background-color: #2196f3;
+	}
 }
 .modal-form-checkbox-icon {
 	fill: #ffffff;
-}
-
-.modal-form-checkbox:checked + .modal-form-checkbox-custom {
-	border-color: transparent;
-	background-color: #2196f3;
 }
 
 .send-btn {

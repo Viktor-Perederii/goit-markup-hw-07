@@ -985,18 +985,13 @@ textarea {
   -webkit-transition-timing-function: var(--transition-func);
           transition-timing-function: var(--transition-func);
 }
-
 .form-input:not(:-moz-placeholder-shown) + .modal-form-icon {
   fill: #2196f3;
 }
-
 .form-input:not(:-ms-input-placeholder) + .modal-form-icon {
   fill: #2196f3;
 }
-
-.form-input:hover + .modal-form-icon,
-.form-input:focus + .modal-form-icon,
-.form-input:not(:placeholder-shown) + .modal-form-icon {
+.form-input:hover + .modal-form-icon, .form-input:focus + .modal-form-icon, .form-input:not(:placeholder-shown) + .modal-form-icon {
   fill: #2196f3;
 }
 
@@ -1071,14 +1066,13 @@ textarea {
   border-radius: 2px;
   cursor: pointer;
 }
-
-.modal-form-checkbox-icon {
-  fill: #ffffff;
-}
-
 .modal-form-checkbox:checked + .modal-form-checkbox-custom {
   border-color: transparent;
   background-color: #2196f3;
+}
+
+.modal-form-checkbox-icon {
+  fill: #ffffff;
 }
 
 .send-btn {
